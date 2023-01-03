@@ -1,0 +1,35 @@
+{
+  "name": "entropy-generator",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/entropy-generator.umd.cjs",
+  "module": "./dist/entropy-generator.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint lib/**/*.js",
+    "prettier": "prettier --check lib"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "eslint": "^8.31.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.26.3",
+    "prettier": "^2.8.1",
+    "vite": "^4.0.0",
+    "vitest": "^0.26.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/entropy-generator.js",
+      "require": "./dist/entropy-generator.umd.cjs"
+    }
+  }
+}

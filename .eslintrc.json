@@ -1,0 +1,39 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            { "allowTemplateLiterals": true }
+        ],
+        "no-const-assign": "error",
+        "no-unused-vars": "error",
+        "prefer-const": "error",
+        "no-new-object": "error",
+        "no-array-constructor": "error",
+        "no-eval": "error",
+        "no-trailing-spaces": "error",
+        "max-params": [
+            "error",
+            4
+        ],
+        "max-depth": [
+            "error",
+            3
+        ],
+        "eol-last": [
+            "error",
+            "always"
+        ]
+    }
+}
