@@ -40,12 +40,12 @@ npm test
 
 #### Watch
 ```js
-npm test:watch
+npm run test:watch
 ```
 
 #### Coverage
 ```js
-npm test:coverage
+npm run test:coverage
 ```
 
 ## How to Contribute
