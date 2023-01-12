@@ -1,5 +1,7 @@
 # Entropy generator
 
+![branch status](https://github.com/mintlayer/entropy-generator/actions/workflows/node.js.yml/badge.svg)
+
 ## Install
 ```js
 npm i entropy-generator
@@ -46,3 +48,6 @@ npm test:watch
 npm test:coverage
 ```
 
+## How to Contribute
+
+[Check here](./CONTRIBUTING.md) to see what you should do, and the rules you should follow, to contribute to this project.
