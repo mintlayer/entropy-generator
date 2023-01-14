@@ -7,23 +7,37 @@
 npm i entropy-generator
 ```
 
+## Environment support
+This lib can be used on the browser or Node environment. The `Buffer` object and `Random` function will adapt accordingly.
+
 ## Usage
 
 ### generateEntropy
 Call the function `generateEntropy` with a normalized array of integers as parameter.
+The second parameter(optional) is the size of the output. If set, it has to be smaller or the same size as the input. 
 A [Buffer](https://nodejs.org/api/buffer.html) object will be returned.
 
 
 By "normalized" it means all values should be between 0-255. You can normalize you array by yourself or [the normalizer function](https://github.com/mintlayer/entropy-generator#normalize) exported also by this library.
 
-#### Example:
+#### Example 1:
 ```js
 import { generateEntropy } from 'entropy-generator'
 
 const initialArray = [ 1, 170, 55, 80, 190 ]
-generateEntropy(initialArray)
-// returns: Uint8Array(5) [ 1, 170, 55, 80, 190 ]
+const entropy = generateEntropy(initialArray)
+// entropy size: 5
 ```
+
+#### Example 2:
+```js
+import { generateEntropy } from 'entropy-generator'
+
+const initialArray = [ 1, 170, 55, 80, 190 ]
+const entropy = generateEntropy(initialArray, 3)
+// entropy size: 3
+```
+
 
 ### normalize
 Call the function `normalize` an array of integers as parameter.
