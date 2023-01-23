@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "buffer": "^6.0.3",
-    "eslint": "^8.31.0"
+    "crypto-shuffle": "^1.0.1",
+    "eslint": "^8.31.0",
+    "get-random-values": "^2.0.0"
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.26.3",
