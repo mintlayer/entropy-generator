@@ -1,0 +1,9 @@
+node_modules
+coverage
+.git
+.github
+lib
+.prettierrc
+.eslintrc.json
+.vite.config.js
+*.tgz

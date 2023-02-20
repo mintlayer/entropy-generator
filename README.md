@@ -1,6 +1,17 @@
 # Entropy generator
+An entropy generator based on first durstenfeld variant of fisher-yates.
+
+
+## Versions
+This is the main branch.
+
+Latest packages can be find on [npm](https://www.npmjs.com/package/@mintlayer/entropy-generator) or [releases](https://github.com/mintlayer/entropy-generator/releases).
+
+Latest public package source code can be found here: [v1.0.0](https://github.com/mintlayer/entropy-generator/tree/v1.0.0)
+
 
 ![branch status](https://github.com/mintlayer/entropy-generator/actions/workflows/node.js.yml/badge.svg)
+
 
 ## Install
 ```js

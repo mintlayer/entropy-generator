@@ -1,5 +1,5 @@
 {
-  "name": "entropy-generator",
+  "name": "@mintlayer/entropy-generator",
   "version": "1.0.0",
   "type": "module",
   "files": [
@@ -33,5 +33,14 @@
       "import": "./dist/entropy-generator.js",
       "require": "./dist/entropy-generator.umd.cjs"
     }
-  }
+  },
+  "bugs" : {
+    "url": "https://github.com/mintlayer/entropy-generator/issues"
+  },
+  "repository": {
+    "type": "url",
+    "url": "https://github.com/mintlayer/entropy-generator"
+  },
+  "engines": {"node": ">=18.14.1", "npm": ">=9.2.0"},
+  "keywords": ["entropy", "generator", "permutation"]
 }
