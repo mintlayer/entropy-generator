@@ -2,6 +2,10 @@
 
 ![branch status](https://github.com/mintlayer/entropy-generator/actions/workflows/node.js.yml/badge.svg)
 
+## NOTE 
+
+Calling the normalise function when the original measuring range was less than half the target range (0-100 and 0-255 for example) the output may be biased. It may be sufficient for your use case or not. Use at your own risk.
+
 ## Install
 ```js
 npm i entropy-generator
