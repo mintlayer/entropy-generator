@@ -10,6 +10,8 @@ Follow this for each task:
   git checkout -b A-1202012043191654
   ```
 - Do as many commits as you need.
+- Run lint:
+  `npm run lint`
 - Push the branch to the remote repo:
   - E.g.:
   ```
