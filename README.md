@@ -7,7 +7,7 @@ This is the main branch.
 
 Latest packages can be find on [npm](https://www.npmjs.com/package/@mintlayer/entropy-generator) or [releases](https://github.com/mintlayer/entropy-generator/releases).
 
-Latest public package source code can be found here: [v1.0.1](https://github.com/mintlayer/entropy-generator/tree/v1.0.1)
+Latest public package source code can be found here: [v1.0.2](https://github.com/mintlayer/entropy-generator/tree/v1.0.2)
 
 
 ![branch status](https://github.com/mintlayer/entropy-generator/actions/workflows/node.js.yml/badge.svg)
@@ -15,7 +15,7 @@ Latest public package source code can be found here: [v1.0.1](https://github.com
 
 ## Install
 ```js
-npm i entropy-generator
+npm i @mintlayer/entropy-generator
 ```
 
 ## Environment support
