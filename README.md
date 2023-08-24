@@ -92,6 +92,11 @@ npm run test:watch
 npm run test:coverage
 ```
 
+#### Lint
+```js
+npm run lint
+```
+
 ## How to Contribute
 
 [Check here](./CONTRIBUTING.md) to see what you should do, and the rules you should follow, to contribute to this project.
