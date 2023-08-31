@@ -19,14 +19,14 @@
   "dependencies": {
     "buffer": "^6.0.3",
     "crypto-shuffle": "^1.0.1",
-    "eslint": "^8.31.0",
     "get-random-values": "^2.0.0"
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.26.3",
     "prettier": "^2.8.1",
     "vite": "^4.0.0",
-    "vitest": "^0.26.3"
+    "vitest": "^0.26.3",
+    "eslint": "^8.31.0"
   },
   "exports": {
     ".": {
