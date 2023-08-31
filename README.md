@@ -3,7 +3,7 @@ An entropy generator based on first durstenfeld variant of fisher-yates.
 
 
 ## Versions
-This is the main branch.
+This is the dev branch.
 
 Latest packages can be find on [npm](https://www.npmjs.com/package/@mintlayer/entropy-generator) or [releases](https://github.com/mintlayer/entropy-generator/releases).
 
