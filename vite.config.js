@@ -10,10 +10,12 @@ export default defineConfig({
       fileName: 'entropy-generator'
     },
     rollupOptions: {
-      external: ['buffer'],
+      external: ['buffer', 'crypto', 'node:crypto'],
       output: {
         globals: {
           buffer: 'Buffer',
+          crypto: 'crypto',
+          'node:crypto': 'crypto',
         },
       },
     },
