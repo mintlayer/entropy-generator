@@ -7,3 +7,4 @@ lib
 .eslintrc.json
 .vite.config.js
 *.tgz
+.DS_Store
