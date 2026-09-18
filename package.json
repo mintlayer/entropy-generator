@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint lib/**/*.js",
-    "prettier": "prettier --check lib"
+    "prettier": "prettier --check lib",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
   },
   "dependencies": {
     "buffer": "^6.0.3",
@@ -43,6 +44,10 @@
     "url": "https://github.com/mintlayer/entropy-generator"
   },
   "engines": {"node": ">=14.21.3", "npm": ">=6.14.18"},
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": ["entropy", "generator", "permutation"],
   "license":"MIT"
 }
