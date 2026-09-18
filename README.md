@@ -3,11 +3,11 @@ An entropy generator based on first durstenfeld variant of fisher-yates.
 
 
 ## Versions
-This is the dev branch.
+This is the main branch.
 
 Latest packages can be find on [npm](https://www.npmjs.com/package/@mintlayer/entropy-generator) or [releases](https://github.com/mintlayer/entropy-generator/releases).
 
-Latest public package source code can be found here: [v1.0.4](https://github.com/mintlayer/entropy-generator/tree/v1.0.4)
+Latest public package source code can be found here: [main](https://github.com/mintlayer/entropy-generator)
 
 
 ![branch status](https://github.com/mintlayer/entropy-generator/actions/workflows/node.js.yml/badge.svg)
@@ -19,13 +19,16 @@ npm i @mintlayer/entropy-generator
 ```
 
 ## Environment support
-This lib can be used on the browser or Node environment. The `Buffer` object and `Random` function will adapt accordingly.
+Requires Node.js 20+ or an environment providing `crypto.getRandomValues`.
+In browsers, use a bundler — the `buffer` dependency is resolved automatically.
+
+Note on output quality: the input array shapes the shuffle, but every output byte is XORed with cryptographically secure random bytes, so the result is uniformly random regardless of the input.
 
 ## Usage
 
 ### generateEntropy
 Call the function `generateEntropy` with a normalized array of integers as parameter.
-The second parameter(optional) is the size of the output. If set, it has to be smaller or the same size as the input. 
+The second parameter(optional) is the size of the output. If set, it has to be a non-negative integer, smaller or the same size as the input. 
 A [Buffer](https://nodejs.org/api/buffer.html) object will be returned.
 
 
@@ -33,7 +36,7 @@ By "normalized" it means all values should be between 0-255. You can normalize y
 
 #### Example 1:
 ```js
-import { generateEntropy } from 'entropy-generator'
+import { generateEntropy } from '@mintlayer/entropy-generator'
 
 const initialArray = [ 1, 170, 55, 80, 190 ]
 const entropy = generateEntropy(initialArray)
@@ -42,7 +45,7 @@ const entropy = generateEntropy(initialArray)
 
 #### Example 2:
 ```js
-import { generateEntropy } from 'entropy-generator'
+import { generateEntropy } from '@mintlayer/entropy-generator'
 
 const initialArray = [ 1, 170, 55, 80, 190 ]
 const entropy = generateEntropy(initialArray, 3)
@@ -56,11 +59,11 @@ Another array will be returned with all values between 0-255.
 
 #### Example:
 ```js
-import { normalize } from 'entropy-generator'
+import { normalize } from '@mintlayer/entropy-generator'
 
 const initialArray = [-2000, -15000, 300, 400, 1500]
 normalize(initialArray)
-// returns: Uint8Array(5) [ 201, 0, 236, 238, 255 ]
+// returns: [ 201, 0, 236, 238, 255 ]
 ```
 
 ## Development
